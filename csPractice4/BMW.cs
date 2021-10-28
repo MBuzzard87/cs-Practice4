@@ -21,9 +21,9 @@ namespace csPractice4
             Console.WriteLine("The {0} {1} {2} has {3} HP", Color, brand, Model, HP);
         }
 
-        public override void Repair()
+        public sealed override void Repair()
         {
-            Console.WriteLine("The {0} was not repaired because it cost too much to fix", brand);
+            Console.WriteLine("The {0} {1} was not repaired because it cost too much to fix", brand, Model);
         }
     }
 }
