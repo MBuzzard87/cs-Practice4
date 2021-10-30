@@ -1,0 +1,7 @@
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\bin\Debug\csPractice4.exe.config
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\bin\Debug\csPractice4.exe
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\bin\Debug\csPractice4.pdb
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\obj\Debug\csPractice4.csproj.AssemblyReference.cache
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\obj\Debug\csPractice4.csproj.CoreCompileInputs.cache
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\obj\Debug\csPractice4.exe
+C:\Users\Buzz\Desktop\VS2019\csPractice4\csPractice4\obj\Debug\csPractice4.pdb

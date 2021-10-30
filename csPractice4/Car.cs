@@ -12,6 +12,22 @@ namespace csPractice4
         public int HP { get; set; }
         public string Color { get; set; }
 
+
+        // CAR "HAS A" CAR ID relationship
+        protected CarIdInfo carIdInfo = new CarIdInfo();
+
+        public void SetCarIDInfo(int idNum, string owner)
+        {
+            carIdInfo.IDNum = idNum;
+            carIdInfo.Owner = owner;
+        }
+
+        public void GetCarIDInfo()
+        {
+            Console.WriteLine("The car has the ID of {0} and is owned by {1}", carIdInfo.IDNum, carIdInfo.Owner);
+        }
+
+
         public Car(int hp, string color)
         {
             HP = hp;

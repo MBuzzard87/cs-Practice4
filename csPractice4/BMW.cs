@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace csPractice4
 {
+    // BMW "IS A" CAR
     class BMW : Car
     {
         public string Model { get; set; }
