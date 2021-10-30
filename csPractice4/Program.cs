@@ -87,12 +87,21 @@ namespace csPractice4
             */
 
             ReadTextFile read = new ReadTextFile();
+            //basic file read/write
             read.WriteLineToFile1();
             read.ReadLineFromFile();
             Console.WriteLine("\n\n");
 
+            //read/write based on input
             read.WriteLineToFile2();
             read.ReadLineFromFile();
+            Console.WriteLine("\n\n");
+
+            //read/write using streamwriter and a conditional
+            read.WriteLineToFile3();
+            read.ReadLineFromFile();
+            
+
 
             Console.ReadKey();
 

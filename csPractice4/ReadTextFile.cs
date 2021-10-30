@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace csPractice4
 {
@@ -52,6 +49,22 @@ namespace csPractice4
 
             System.IO.File.WriteAllLines(@"C:\Users\Buzz\Desktop\TextFile1.txt", lines);
         
+        }
+
+        public void WriteLineToFile3()
+        {
+            string[] lines = { "1 one", "2 two", "3 three" };
+
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Buzz\Desktop\TextFile1.txt"))
+            {
+                foreach(string s in lines)
+                {
+                    if(s.Contains("three"))
+                    {
+                        file.WriteLine(s);
+                    }
+                }
+            }
         }
 
         
