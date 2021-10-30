@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace csPractice4
 {
+
+    struct Game
+    {
+        public string name;
+        public string developer;
+        public double rating;
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -100,7 +108,21 @@ namespace csPractice4
             //read/write using streamwriter and a conditional
             read.WriteLineToFile3();
             read.ReadLineFromFile();
+            Console.WriteLine("\n\n");
+
+            //add an additional line to the file with streamwriter
+            read.WriteLineToFile4();
+            read.ReadLineFromFile();
+
+
+            //Game
+            Game game1;
+
+            game1.name = "Super Castlevania IV";
+            game1.developer = "Konami";
+            game1.rating = 9.5;
             
+
 
 
             Console.ReadKey();
