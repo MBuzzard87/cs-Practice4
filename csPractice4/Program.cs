@@ -14,6 +14,9 @@ namespace csPractice4
         public double rating;
     }
 
+    enum Day { Mon,Tues,Wed,Thu,Fri,Sat,Sun};
+    enum Month { Jan = 1, Feb, Mar, Apr, May,Jun, Jul = 12, Aug, Sep, Oct, Nov, Dec};
+
     class Program
     {
         static void Main(string[] args)
@@ -94,6 +97,7 @@ namespace csPractice4
             Console.WriteLine("\n\n{0} has a Volume of {1}", cube2.Name, cube2.Volume());
             */
 
+            /* ReadTextFile
             ReadTextFile read = new ReadTextFile();
             //basic file read/write
             read.WriteLineToFile1();
@@ -114,19 +118,36 @@ namespace csPractice4
             read.WriteLineToFile4();
             read.ReadLineFromFile();
 
+            */
 
-            //Game
+            /* Game Struct ^^^^^^
             Game game1;
 
             game1.name = "Super Castlevania IV";
             game1.developer = "Konami";
             game1.rating = 9.5;
             
+            */
 
+            /* enum ^^^^^
+            Day fr = Day.Fri;
+            Day su = Day.Sun;
+            Day a = Day.Fri;
 
+            Console.WriteLine(a == fr);
+            Console.WriteLine(Day.Mon);
+            Console.WriteLine((int)Day.Mon);
 
+            Console.WriteLine((int)Month.Aug);
+            Console.WriteLine((int)Month.Jun);
+
+            */
+
+            
+            RandomFortune ranfortune = new RandomFortune();
+            
             Console.ReadKey();
-
+            
         }
     }
 }

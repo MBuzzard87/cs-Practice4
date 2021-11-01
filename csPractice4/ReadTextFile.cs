@@ -67,9 +67,19 @@ namespace csPractice4
             }
         }
 
-        
+        public void WriteLineToFile4()
+        {
+            string[] lines = { "1 one", "2 two", "3 three" };
 
-        
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Buzz\Desktop\TextFile1.txt", true))
+            {
+                file.WriteLine("Additional line");
+            }
+        }
+
+
+
+
 
     }
 }

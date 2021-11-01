@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace csPractice4
 {
@@ -14,10 +11,10 @@ namespace csPractice4
             Console.WriteLine("Ask a question and you shall receive your fortune");
             Console.ReadLine();
 
-            Random numRan = new Random();
+            Random answerNum = new Random();
             string[] fortune = { "Yes", "No", "Maybe" };
 
-            Console.WriteLine(fortune[numRan.Next(0, 3)]);
+            Console.WriteLine(fortune[answerNum.Next(0, 3)]);
 
             
 
