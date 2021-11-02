@@ -147,8 +147,9 @@ namespace csPractice4
             /*  RandomFortune
             RandomFortune ranfortune = new RandomFortune();
             */
-            
-            
+
+
+            /*  REGULAR EXPRESSIONS
             string pattern = @"\d";
             Regex regex = new Regex(pattern);
 
@@ -164,6 +165,79 @@ namespace csPractice4
                 Console.WriteLine("{0} found at index {1}", group[0].Value, group[0].Index);
             }
             
+            */
+
+
+            /* DATE TIME
+            DateTimeT dt = new DateTimeT();
+            */
+
+            /* Nullables
+            NullablesE nullClass = new NullablesE();
+            */
+
+            if(args.Length == 0)
+            {
+                Console.WriteLine("This is a smart app that uses args.  " +
+                    "Please provide arguments next time. Type help if you want more details.");
+
+                Console.ReadKey();
+                // return will quit the application
+                return;
+
+            }
+
+            if(args[0] == "help")
+            {
+                Console.WriteLine("enter add to add 2 numbers\n enter sub to subtract 2 numbers");
+
+                Console.ReadKey();
+                
+                return;
+            }
+
+            if(args.Length != 3)
+            {
+                Console.WriteLine("Please enter help for instructions.");
+                Console.ReadKey();
+                return;
+            }
+
+            bool isNum1Parsed = float.TryParse(args[1], out float num1);
+            bool isNum2Parsed = float.TryParse(args[2], out float num2);
+
+            if (!isNum1Parsed || !isNum2Parsed)
+            {
+                
+
+                Console.WriteLine("Invalid arguments");
+                Console.ReadKey();
+                return;
+            }
+
+            float result;
+
+            switch (args[0])
+            {
+                case "add":
+                    result = num1 + num2;
+                    Console.WriteLine($"The sum of {num1} and {num2} is {result}");
+                    break;
+
+                case "sub":
+                    result = num1 - num2;
+                    Console.WriteLine($"{num1} subtracted by {num2} is {result}");
+                    break;
+                default:
+                    Console.WriteLine("Invalid arguments");
+                    break;
+            }
+
+
+           
+
+
+
 
 
             Console.ReadKey();
